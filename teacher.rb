@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'person'
 
 # The Teacher class represents a teacher with a name, age, and specialization.

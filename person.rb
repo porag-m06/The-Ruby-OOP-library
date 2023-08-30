@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # The Person class represents a person with an id, name, and age.
 class Person
   attr_reader :id
