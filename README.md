@@ -48,7 +48,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## 💻 Getting Started <a name="getting-started"></a>
+# 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -85,7 +85,7 @@ To run tests, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+# 👥 Author <a name="authors"></a>
 > Developed by: 
 ### Md. Porag Sarkar
 - GitHub: [@porag-m06](https://github.com/porag-m06)
@@ -95,26 +95,26 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🤝 Contributing <a name="contributing"></a>
+# 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/porag-m06/The-Ruby-OOP-library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## ⭐️ Show your support <a name="support"></a>
+# ⭐️ Show your support <a name="support"></a>
 As a tech enthusiast, your support is always appreciated. If you like this project please do let me know with your support in any way you see fit.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+# 🙏 Acknowledgments <a name="acknowledgements"></a>
 I would like to thank  [Microverse](https://github.com/microverseinc) for this project's info & guidelines.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## ❓ FAQ <a name="faq"></a>
+# ❓ FAQ <a name="faq"></a>
 - **Can I fork this project?**
   - Yes, feel free to fork and knock yourself out :) . 
 
@@ -125,7 +125,7 @@ I would like to thank  [Microverse](https://github.com/microverseinc) for this p
 
 
 
-## 📝 License <a name="license"></a>
+# 📝 License <a name="license"></a>
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
