@@ -95,6 +95,14 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 🔭 Future Features <a name="future-features"></a>
+- [ ] **add basic UI**
+- [ ] **preserve data**
+- [ ] **unit tests**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 # 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/porag-m06/The-Ruby-OOP-library/issues).
