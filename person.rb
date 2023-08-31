@@ -1,5 +1,7 @@
+require_relative 'nameable'
+
 # The Person class represents a person with an id, name, and age.
-class Person
+class Person <Nameable
   attr_reader :id
   attr_accessor :name, :age
 
@@ -18,5 +20,10 @@ class Person
 
   def of_age?
     @age >= 18
+  end
+
+  # Implementing the correct_name method that returns the name
+  def correct_name
+    @name
   end
 end
