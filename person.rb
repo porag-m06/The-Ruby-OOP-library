@@ -17,14 +17,14 @@ class Person < Nameable
     of_age? || @parent_permission
   end
 
+  # Implementing the correct_name method that returns the name
+  def correct_name
+    @name
+  end
+
   private
 
   def of_age?
     @age >= 18
-  end
-
-  # Implementing the correct_name method that returns the name
-  def correct_name
-    @name
   end
 end
