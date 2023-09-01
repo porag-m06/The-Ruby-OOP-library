@@ -1,4 +1,5 @@
 require_relative 'nameable'
+require_relative 'rental'
 
 # The Person class represents a person with an id, name, and age.
 class Person < Nameable
