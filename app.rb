@@ -1,4 +1,5 @@
 # This is the app.rb file that is defined as a entry point of the OOP library here.
+
 require_relative 'book'
 require_relative 'person'
 require_relative 'student'
@@ -53,7 +54,6 @@ class App
       puts 'Person created successfully'
     else
       puts 'Invalid option. Please try again.'
-      return create_person
     end
   end
 
