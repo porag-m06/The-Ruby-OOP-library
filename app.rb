@@ -1,3 +1,4 @@
+# This is the app.rb file that is defined as a entry point of the OOP library here.
 require_relative 'book'
 require_relative 'person'
 require_relative 'student'
@@ -10,56 +11,16 @@ class App
     @people = []
   end
 
-  def main
-    puts 'Welcome to School Library App!'
-    puts ''
-    puts 'Please choose an option by entering a number:'
-    puts '1 - List all books'
-    puts '2 - List all people'
-    puts '3 - Create a person'
-    puts '4 - Create a book'
-    puts '5 - Create a rental'
-    puts '6 - List all rentals for a given person id'
-    puts '7 - Exit'
-    puts ''
-
-    option = gets.chomp.to_i
-
-    case option
-    when 1
-      list_all_books
-    when 2
-      list_all_people
-    when 3
-      create_person
-    when 4
-      create_book
-    when 5
-      create_rental
-    when 6
-      list_rentals_for_person_id
-    when 7
-      puts 'Thank you for using this app!'
-      return
-    else
-      puts 'Invalid option. Please try again.'
-    end
-
-    main
-  end
-
-  private
-
   def list_all_books
     @books.each do |book|
-      puts 'Title: #{book.title}, Author: #{book.author}'
+      puts "Title: #{book.title}, Author: #{book.author}"
     end
   end
 
   def list_all_people
     @people.each do |person|
       type = person.is_a?(Student) ? '[Student]' : '[Teacher]'
-      puts '#{type} Name: #{person.name}, ID: #{person.id}, Age: #{person.age}'
+      puts "#{type} Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end
 
@@ -112,7 +73,7 @@ class App
   def create_rental
     puts 'Select a book from the following list by number'
     @books.each_with_index do |book, index|
-      puts '#{index}) Title: #{book.title}, Author: #{book.author}'
+      puts "#{index}) Title: #{book.title}, Author: #{book.author}"
     end
 
     book_index = gets.chomp.to_i
@@ -120,7 +81,7 @@ class App
     puts 'Select a person from the following list by number (not id)'
     @people.each_with_index do |person, index|
       type = person.is_a?(Student) ? '[Student]' : '[Teacher]'
-      puts '#{index}) #{type} Name: #{person.name}, ID: #{person.id}, Age: #{person.age}'
+      puts "#{index}) #{type} Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
 
     person_index = gets.chomp.to_i
@@ -146,12 +107,7 @@ class App
 
     puts 'Rentals:'
     person.rentals.each do |rental|
-      puts 'Date: #{rental.date}, Book \'#{rental.book.title}\' by #{rental.book.author}'
+      puts "Date: #{rental.date}, Book '#{rental.book.title}' by #{rental.book.author}"
     end
   end
 end
-
-app = App.new
-app.main
-
-    
