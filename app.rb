@@ -85,7 +85,6 @@ class App
     puts 'Person created successfully'
   end
 
-
   def create_book
     print 'Title: '
     title = gets.chomp
