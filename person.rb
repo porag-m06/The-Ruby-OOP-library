@@ -3,7 +3,7 @@ require_relative 'rental'
 
 # The Person class represents a person with an id, name, and age.
 class Person < Nameable
-  attr_reader :id, rentals
+  attr_reader :id, :rentals
   attr_accessor :name, :age
 
   def initialize(age, name = 'Unknown', parent_permission: true)
