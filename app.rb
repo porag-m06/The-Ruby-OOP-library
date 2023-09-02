@@ -1,11 +1,10 @@
-# This is the app.rb file that is defined as a entry point of the OOP library here.
-
 require_relative 'book'
 require_relative 'person'
 require_relative 'student'
 require_relative 'teacher'
 require_relative 'rental'
 
+# This is the app.rb file that is defined as a entry point of the OOP library here.
 class App
   def initialize
     @books = []
@@ -28,10 +27,8 @@ class App
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     type = gets.chomp.to_i
-
     print 'Age: '
     age = gets.chomp.to_i
-
     print 'Name: '
     name = gets.chomp
 
@@ -39,19 +36,17 @@ class App
     when 1 # Student
       print 'Has parent permission? [Y/N]: '
       parent_permission = gets.chomp.downcase == 'y'
-
       student = Student.new(age, name, parent_permission: parent_permission)
       @people << student
-
       puts 'Person created successfully'
+
     when 2 # Teacher
       print 'Specialization: '
       specialization = gets.chomp
-
       teacher = Teacher.new(age, specialization, name)
       @people << teacher
-
       puts 'Person created successfully'
+
     else
       puts 'Invalid option. Please try again.'
     end
