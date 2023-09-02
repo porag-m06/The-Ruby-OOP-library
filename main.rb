@@ -9,16 +9,15 @@ class Main
   def run
     @app.app_instruction
     option = gets.chomp.to_i
-    app_options(option)
-  end
-
-  def app_options(option)
-
     if(option == 7)
       puts 'Thank you for using this app!'
       return
     end
+    app_options(option)
+    run
+  end
 
+  def app_options(option)
     case option
     when 1
       @app.list_all_books
@@ -35,8 +34,6 @@ class Main
     else
       puts 'Invalid option. Please try again.'
     end
-
-    run
   end
 end
 
