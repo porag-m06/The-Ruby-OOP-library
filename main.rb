@@ -9,7 +9,7 @@ class Main
   def run
     @app.app_instruction
     option = gets.chomp.to_i
-    if (option == 7)
+    if option == 7
       puts 'Thank you for using this app!'
       return
     end
