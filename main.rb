@@ -29,8 +29,6 @@ class Main
     when 7
       puts 'Thank you for using this app!'
       return
-    else
-      puts 'Invalid option. Please try again.'
     end
     run
   end

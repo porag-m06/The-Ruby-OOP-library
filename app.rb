@@ -126,7 +126,7 @@ class App
     print 'ID of person: '
     id = gets.chomp.to_i
 
-    person = @people.find { |person| person.id == id }
+    person = @people.find { |p| p.id == id }
 
     if person.nil?
       puts 'Person not found'
