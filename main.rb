@@ -13,6 +13,12 @@ class Main
   end
 
   def app_options(option)
+
+    if(option == 7)
+      puts 'Thank you for using this app!'
+      return
+    end
+
     case option
     when 1
       @app.list_all_books
@@ -26,10 +32,10 @@ class Main
       @app.create_rental
     when 6
       @app.list_rentals_for_person_id
-    when 7
-      puts 'Thank you for using this app!'
-      return
+    else
+      puts 'Invalid option. Please try again.'
     end
+
     run
   end
 end
